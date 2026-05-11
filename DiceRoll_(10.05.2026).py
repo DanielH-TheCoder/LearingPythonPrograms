@@ -36,6 +36,10 @@ while True:
     
     play_again = input("Play again? (y/n): ").lower().strip()
 
+    if BankBalance <= 0:
+        print('Run out of money Bucko')
+        break
+
     if play_again not in ["y", "n"]:
         print("Invalid choice.")
         continue
